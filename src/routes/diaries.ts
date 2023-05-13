@@ -1,6 +1,7 @@
 import express from 'express';
 import diaryService from '../services/diaryService';
 import toNewDiaryEntry from '../utils';
+import diaryEntries from '../data/diaries';
 
 const router = express.Router();
 
@@ -19,10 +20,11 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    console.log(req.body, 'verPOST');
+    console.log(req.body, 'POST to be "SAVED');
     try {
     const newDiaryEntry = toNewDiaryEntry(req.body);
     const addedEntry = diaryService.addEntry(newDiaryEntry);
+    console.log(diaryEntries, 'Final posts data including the last post added!');
     res.json(addedEntry);
     } catch(e: any) {
         res.status(400).send(e.message);
