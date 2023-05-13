@@ -1,0 +1,40 @@
+{
+  "name": "expresstshelsinki",
+  "version": "1.0.0",
+  "description": "Learning typescript with Express (Helsinki)",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "ts-node-dev src/index.ts",
+    "lint": "eslint --ext .ts .",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/richi-coder/express-TS-helsinki.git"
+  },
+  "keywords": [
+    "express",
+    "Typescript",
+    "Helsinki",
+    "learning"
+  ],
+  "author": "HELSINKI FULLSTACKOPEN - richiCoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richi-coder/express-TS-helsinki/issues"
+  },
+  "homepage": "https://github.com/richi-coder/express-TS-helsinki#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^8.40.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
